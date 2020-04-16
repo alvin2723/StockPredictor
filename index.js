@@ -65,6 +65,8 @@ function cariPrediksi(){
     }
 
     function init() {
+      var StockName = document.getElementById("nama").value;
+      var predictDate = document.getElementById("tanggal").value;
       var counter = 0
       var totalPopulation = 20
       var population = new Array(totalPopulation)
