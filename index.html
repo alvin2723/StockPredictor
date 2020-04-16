@@ -7,11 +7,11 @@
 <body>
   <div class="wrapper">
     <h1>Stock Prediction</h1>
-    <form>
+    <form onsubmit="init()">
       <label>Stock Symbol</label>
-      <input type="text" name="symbol" placeholder="ex:APPL">
+      <input type="text" id="nama" name="symbol" placeholder="ex:APPL">
       <label>Date</label>
-      <input type="date" name="predictiondate" placeholder="Date">
+      <input type="date" id="tanggal" name="predictiondate" placeholder="Date">
       <input type="submit" name="submit">
     </form>
   </div>
