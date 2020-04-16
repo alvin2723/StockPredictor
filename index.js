@@ -38,8 +38,8 @@ function cariPrediksi(){
     console.log("Res = " + getPredictedPrice(kromosom, dataTrain, dataTarget))
     console.log(best_chromosome)
 }
-var res = cariPrediksi();
-document.getElementById('result').innerHTML = res
+     
+    
     // TO DO: 
     // - coba predik harga 1 april pake data bulan maret dgn best_chromosome (jul)
     // - hosting di herokuapp (jul)
@@ -374,5 +374,5 @@ document.getElementById('result').innerHTML = res
 
       return kromosom
     }
-    // document.getElementById('hasilPrediksi').innerHTML = best_chromosome;
+     document.getElementById('result').innerHTML = best_chromosome;
 }
