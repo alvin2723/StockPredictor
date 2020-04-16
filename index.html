@@ -1,20 +1,19 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <script type="text/javascript" src="index.js">
-
-    </script>
-  </head>
-  <body>
-    <h1>Memprediksi Harga Stok Menggunakan Algoritma Genetika</h1>
-    <br>
-    <label for ="namestock">Input Nama dari Stok: </label></br>
-      <input type="text" class="nameStock"><br><br>
-    
-    <button class="btnJs" onclick="cariPrediksi()">Click here!</button>
-
-    <p id="hasilPrediksi">Berikut Hasil Prediksinya</p>
-
-
-  </body>
-
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Stock Prediction</h1>
+    <form>
+      <label>Stock Symbol</label>
+      <input type="text" name="symbol" placeholder="ex:APPL">
+      <label>Date</label>
+      <input type="date" name="predictiondate" placeholder="Date">
+      <input type="submit" name="submit">
+    </form>
+  </div>
+</body>
 </html>
