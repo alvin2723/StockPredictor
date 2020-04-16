@@ -1,5 +1,6 @@
 function cariPrediksi(){
-    var nameStock =  document.getElementById("nameStock").value;
+     var StockName = document.getElementById('nama').value;
+      var predictDate = document.getElementById('tanggal').value;
     var data = dataSelection()
     var dataTarget = getFirstDayInOneMonth(data, '03', '2020')
 
@@ -38,7 +39,7 @@ function cariPrediksi(){
     console.log(best_chromosome)
 }
 var res = cariPrediksi();
-document.body.innerHTML = res;
+document.getElementById('result').innerHTML = res
     // TO DO: 
     // - coba predik harga 1 april pake data bulan maret dgn best_chromosome (jul)
     // - hosting di herokuapp (jul)
@@ -67,8 +68,8 @@ document.body.innerHTML = res;
     }
 
     function init() {
-      var StockName = document.getElementById("nama").value;
-      var predictDate = document.getElementById("tanggal").value;
+     // var StockName = document.getElementById("nama").value;
+     // var predictDate = document.getElementById("tanggal").value;
       var counter = 0
       var totalPopulation = 20
       var population = new Array(totalPopulation)
@@ -373,5 +374,5 @@ document.body.innerHTML = res;
 
       return kromosom
     }
-     document.getElementById('hasilPrediksi').innerHTML = best_chromosome;
+    // document.getElementById('hasilPrediksi').innerHTML = best_chromosome;
 }
