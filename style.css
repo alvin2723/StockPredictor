@@ -2,7 +2,7 @@ body
 {
       margin:0;
       padding: 0;
-      background-image: url(2.jpg);
+      background-image: url(1.jpg);
       -webkit-background-size: cover;
       background-size: cover;
       font-family: Poppins;
@@ -27,7 +27,7 @@ h1
       padding: 0;
       font-weight: bold;
       font-size: 22px;
-      color: #000;
+      color: #fff;
       text-align: center;
       font-family: Courgette;
       margin-bottom: 8%
@@ -48,6 +48,7 @@ h1
       height: 30px;
       font-size: 16px;
       opacity: 1;
+      color: #fff;
 }
 .wrapper input[type = date]
 {
@@ -57,6 +58,7 @@ h1
       outline: none;
       height: 30px;
       font-size: 16px;
+      color: #fff;
       opacity: 0.5;
 }
 
@@ -76,4 +78,7 @@ h1
       cursor: pointer;
 }
 
-
+.wrapper label
+{
+      color: #fff;
+}
