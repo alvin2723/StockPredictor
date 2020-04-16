@@ -233,7 +233,7 @@ document.getElementById('result').innerHTML = res
       var fitnessScore = 0.0;
       
       fitnessScore += Math.abs(hasil - parseFloat(dataTarget['4. close']))
-      lgsg ke github?
+      
       return fitnessScore; 
     }
 
