@@ -374,4 +374,4 @@ document.body.innerHTML = res;
       return kromosom
     }
      document.getElementById('hasilPrediksi').innerHTML = best_chromosome;
-// }
+}
