@@ -37,8 +37,8 @@ function cariPrediksi(){
     console.log("Iterasi = " + i)
     console.log("Res = " + getPredictedPrice(kromosom, dataTrain, dataTarget))
     console.log(best_chromosome)
-     
-    
+      document.getElementById('result').innerHTML = best_chromosome;
+}
     // TO DO: 
     // - coba predik harga 1 april pake data bulan maret dgn best_chromosome (jul)
     // - hosting di herokuapp (jul)
@@ -205,7 +205,7 @@ function cariPrediksi(){
 
     function dataSelection() {
       var data
-      var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+     // var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
       var xmlhttp = new XMLHttpRequest();
       xmlhttp.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
@@ -214,8 +214,8 @@ function cariPrediksi(){
                     ////return data.coord
                 }
             };
-        // xmlhttp.open("GET","https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol="+nameStock+"&apikey=DVBV7U5PAU4WVL8M",false);
-         xmlhttp.open("GET","https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=BBCA&apikey=DVBV7U5PAU4WVL8M",false);
+         xmlhttp.open("GET","https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol="+StockName+"&apikey=DVBV7U5PAU4WVL8M",false);
+         //xmlhttp.open("GET","https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=BBCA&apikey=DVBV7U5PAU4WVL8M",false);
         xmlhttp.responseType = 'json'
         xmlhttp.send();
       return data
@@ -373,5 +373,5 @@ function cariPrediksi(){
 
       return kromosom
     }
-     document.getElementById('result').innerHTML = best_chromosome;
+    
 }
