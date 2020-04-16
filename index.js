@@ -374,4 +374,4 @@ function cariPrediksi(){
       return kromosom
     }
     
-}
+
