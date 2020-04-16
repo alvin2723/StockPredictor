@@ -37,7 +37,6 @@ function cariPrediksi(){
     console.log("Iterasi = " + i)
     console.log("Res = " + getPredictedPrice(kromosom, dataTrain, dataTarget))
     console.log(best_chromosome)
-}
      
     
     // TO DO: 
